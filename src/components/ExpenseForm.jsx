@@ -30,7 +30,7 @@ const ExpenseForm = ({
           </div>
           <div>
             <label htmlFor="date">Date</label>
-            <input type="date" id="date" value={date} onChange={(e) => setDate(e.target.value)} />
+            <input type="date" id="date" value={date} onChange={(e) => setDate(e.target.value)} pattern="\d{2}/\d{2}/\d{4}" placeholder="dd/mm/yyyy"/>
           </div>
           <div>
             <label htmlFor="category">Category</label>
