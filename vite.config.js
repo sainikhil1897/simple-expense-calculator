@@ -1,8 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/simple-expense-calculator/',
+  base: '/simple-expense-calculator/', // Must have leading and trailing slashes
 })

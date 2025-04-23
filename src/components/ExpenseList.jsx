@@ -3,7 +3,7 @@ import ExpenseItem from "./ExpenseItem.jsx";
 
 const ExpenseList = ({ expense }) => {
   return (
-    <div className="card-container">
+    <div className="card-container expense-list-container">
       <h2>Expense List</h2>
       {expense.length === 0 ? (
         <p>No expenses added yet.</p>
@@ -18,7 +18,7 @@ const ExpenseList = ({ expense }) => {
             </tr>
           </thead>
           <tbody>
-          {expense.map((item, index) => (
+            {expense.map((item, index) => (
               <ExpenseItem
                 key={index}
                 description={item.description}
